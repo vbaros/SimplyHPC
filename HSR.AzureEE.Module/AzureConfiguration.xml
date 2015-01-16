@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<azure_configuration>
+	<configuration>
+		<SubscriptionID>subscriptionid</SubscriptionID>
+		<PathToManagementCertificate>C:/Temp/AzureCertificate.pfx</PathToManagementCertificate>
+		<ManagementCertificatePassword>really5ecureEncodedpa55w0rd</ManagementCertificatePassword>
+		<StorageAccountName>storageaccountname</StorageAccountName>
+		<AffinityGroupName>affinitygroup</AffinityGroupName>
+		<StorageAccountKey>storageaccountkey</StorageAccountKey>
+	</configuration>
+</azure_configuration>

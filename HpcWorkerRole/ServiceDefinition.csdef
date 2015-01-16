@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="WindowsAzure_test" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2014-06.2.4">
+  <WorkerRole name="HSR.AzureEE.HpcWorkerRole" vmsize="Small" enableNativeCodeExecution="true">
+    <Runtime executionContext="limited"></Runtime>
+    <Imports>
+      <!--      <Import moduleName="Diagnostics" /> -->
+      <Import moduleName="RemoteAccess" />
+      <Import moduleName="RemoteForwarder" />
+    </Imports>
+    <Startup>
+      <!--TODO: ONLY FOR TEST - disable all firewall ... needs to be redone for production-->
+      <Task commandLine="Startup\DisableFirewall.cmd" taskType="simple" executionContext="elevated"></Task>
+      <Task commandLine="Startup\MSMPISetup.exe -unattend -force -minimal" taskType="simple" executionContext="elevated"></Task>
+      <Task commandLine="Startup\installservices.bat" taskType="simple" executionContext="elevated"></Task>
+    </Startup>
+    <LocalResources>
+      <LocalStorage name="jobdata" sizeInMB="10000" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="HSR.DeploymentName" />
+      <Setting name="HSR.StorageAccountName" />
+      <Setting name="HSR.StorageAccountKey" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InternalEndpoint name="mpiEndpointTCP" protocol="tcp">
+        <FixedPortRange min="3390" max="65500" />
+      </InternalEndpoint>
+      <InternalEndpoint name="mpiEndpointUDP" protocol="udp">
+        <FixedPortRange min="3390" max="65500" />
+      </InternalEndpoint>
+    </Endpoints>
+  </WorkerRole>
+</ServiceDefinition>

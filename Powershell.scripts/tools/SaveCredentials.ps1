@@ -1,0 +1,1 @@
+Get-EncryptedPassword | Out-File cred.txt
