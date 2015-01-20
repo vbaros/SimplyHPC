@@ -19,7 +19,7 @@ Installation
 -----
 
 1. Checkout the github repo.
-2. Rename <repo>\SimplyHPC\Controller\Properties\Resources_empty.resx to Resources.resx
+2. Rename [Resources_empty.resx](https://github.com/vbaros/SimplyHPC/blob/master/Controller/Properties/Resources_empty.resx) to Resources.resx
 and add your password to access VMs.
 Password is defined in Azure Management Portal.
 3. Load the Solution into Microsoft .NET
@@ -80,4 +80,4 @@ are very welcome!
 Authors
 -------
 
-SimplyHPC was created at by Michael Pantic and Vladimir Baros [Microsoft Innovation Center Rapperswil](www.msic.ch) and is currently maintained by Vladimir Baros. The project is also supported by Lukasz Miroslaw.
+SimplyHPC was created at by Michael Pantic and Vladimir Baros at [Microsoft Innovation Center Rapperswil](www.msic.ch) and is currently maintained by Vladimir Baros. The project is also supported by Lukasz Miroslaw.
