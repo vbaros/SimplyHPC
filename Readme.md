@@ -80,5 +80,4 @@ are very welcome!
 Authors
 -------
 
-SimplyHPC was created at [Microsoft Innovation Center Rapperswil](www.msic.ch) and is maintained by Vladimir Baros, SimplyHPC 0.x
-was created by Michael Plecic.  The project is also supported by Lukasz Miroslaw.
+SimplyHPC was created at by Michael Pantic and Vladimir Baros [Microsoft Innovation Center Rapperswil](www.msic.ch) and is currently maintained by Vladimir Baros. The project is also supported by Lukasz Miroslaw.
