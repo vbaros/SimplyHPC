@@ -37,7 +37,10 @@ Password is defined in Azure Management Portal.
 
   `Get-Module HSR.AzureEE.Module`
   
-7. Create Management Certificate
+7. Create Management Certificate (you can find these tools in Windows Kits, see [this](http://stackoverflow.com/questions/1689450/how-to-create-a-self-signed-certificate-with-the-private-key-inside-in-a-file-in) link)
+    *	makecert -r -pe -n "CN=CompanyXYZ Server" -b 01/01/2015 -e 01/01/2022 -sky exchange Server.cer -sv Server.pvk
+    *	pvk2pfx.exe -pvk Server.pvk -spc Server.cer -pfx Server.pfx -po <password>
+
 8. Edit AzureConfigActive.xml and add the configuration information.
 9. Test if the command lets work by executing:
 
