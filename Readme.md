@@ -19,8 +19,8 @@ Installation
 -----
 
 1. Checkout the github repo.
-2. Rename [Resources_empty.resx](https://github.com/vbaros/SimplyHPC/blob/master/Controller/Properties/Resources_empty.resx) to Resources.resx
-and add your password to access VMs.
+2. Rename [Resources_empty.resx](https://github.com/vbaros/SimplyHPC/blob/master/Controller/Properties/Resources_empty.resx) to Resources.resx and add your password to access VMs 
+in `<data name="pass"><value>yourPassword</value></data>` tag.
 Password is defined in Azure Management Portal.
 3. Load the Solution into Microsoft .NET
 4. Right-click on Solution in Solution Explorer and Enable NuGet Restore.
