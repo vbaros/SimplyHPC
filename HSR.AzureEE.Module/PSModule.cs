@@ -13,19 +13,5 @@ namespace HSR.AzureEE.Module
 {
     public class PSModule 
     {
-        //public override string Description
-        //{
-        //    get { return "Collection of cmdlets for running applications in Azure"; }
-        //}
-
-        //public override string Name
-        //{
-        //    get { return "HSR.AzureEE module"; }
-        //}
-
-        //public override string Vendor
-        //{
-        //    get { return "HSR"; }
-        //}
     }
 }
